@@ -1,6 +1,6 @@
 
 CREATE TABLE Volunteer(
-user	 VARCHAR(20),
+userV	 VARCHAR(20),
 pwd   VARCHAR(50),
 address VARCHAR(20),
 name VARCHAR(20),
