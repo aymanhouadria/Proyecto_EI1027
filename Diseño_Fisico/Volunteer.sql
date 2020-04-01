@@ -11,5 +11,5 @@ applicationDate DATE,
 acceptationDate DATE,
 accepted Boolean,
 birthDate	DATE,
-CONSTRAINT cp_Volunteer PRIMARY KEY (user)
+CONSTRAINT cp_Volunteer PRIMARY KEY (userV)
 );
