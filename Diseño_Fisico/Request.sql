@@ -1,7 +1,8 @@
 
 CREATE TABLE Request(
 number	 VARCHAR(20),
-DNI VARCHAR(10),
+DNI VARCHAR(10) NOT NULL,
+numberC	VARCHAR(20) NOT NULL,
 serviceType   VARCHAR(20),
 creationDate 	DATE,
 state VARCHAR(20),
