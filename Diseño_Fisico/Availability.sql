@@ -1,8 +1,14 @@
 
 CREATE TABLE Availability(
 date	 DATE,
-beginningHour   DATE,
-endingHour	DATE,
+beginningHour   TIME,
+userV VARCHAR(20) NOT NULL,
+DNI VARCHAR(10),
+endingHour	TIME,
 stateAvailable BOOLEAN,
-CONSTRAINT cp_availabilty PRIMARY KEY (date,beginningHour)
+CONSTRAINT cp_availabilty PRIMARY KEY (date,beginningHour,userV),
+CONSTRAINT ca_user_V FOREIGN KEY (userV) REFERENCES Volunteer
+ON DELETE RESTRICT ON UPDATE CASCADE,
+CONSTRAINT ca_DNI_E FOREIGN KEY (DNI) REFERENCES Elderly
+ON DELETE RESTRICT ON UPDATE CASCADE
 );
